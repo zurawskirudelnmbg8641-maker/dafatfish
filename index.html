@@ -171,6 +171,7 @@
     #say{bottom:calc(70px + env(safe-area-inset-bottom))}
   }
 </style>
+<!-- build: 2026-10-04 13:18 -->
 </head>
 <body>
 <canvas id="c"></canvas>
@@ -2231,7 +2232,7 @@ if(firstTime){
 document.addEventListener('visibilitychange', ()=>{ if(document.hidden) save(); });
 window.addEventListener('beforeunload', save);
 save();
-window.__bff = { state, fish, G, items: ITEMS, stages: STAGES, save, load };
+/* 调试探针已在发布构建中移除 */
 // 首次交互解锁音频
 window.addEventListener('pointerdown', function once(){
   if(state.sound){ ac(); ambient(true); }
